@@ -20,3 +20,6 @@ jobs:
           with:
             username: ${{ vars.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_TOKEN }}
+        
+        - name: push image to docker hub
+          run: docker push 1998shehab/app1:01
